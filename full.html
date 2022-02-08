@@ -1,0 +1,454 @@
+<html>
+  <head>
+		<style>
+
+		
+		body{overflow:hidden;}
+			#header{
+				
+				width:100%;
+				height:70px;
+				text-align: center;
+				  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+ box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3)!important;
+ margin-bottom:20px;
+			}
+
+			#sidebar-left{
+				float:left;
+				width:10%;
+				display:block;
+			}
+
+			#main{
+				float:left;
+				width:80%;
+				background-color: #f0f0f0;
+			}
+
+			#sidebar-right{
+				float:left;
+				width:10%;
+			}
+
+			#footer{
+				clear:both;
+				height: 50px;
+				width: 100%;
+			
+				background-color: lightblue;
+			}
+
+			#sidebar-left, #main, #sidebar-right{
+				min-height: 600px				
+			}
+			
+			    * {font-family: "Segoe UI", Tahoma;}
+    ul.nav {border-bottom: 1px solid #999;background:#fff;    border-bottom: 1px solid #999;
+    background: #fff;
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    border-radius: 10px;bottom:0px;}
+    ul.nav li a {display: block; text-decoration: none; color: #333; padding: 5px; border:}
+    ul.nav > li:hover {border: 1px solid #666; border-bottom: 1px solid #fff;}
+    ul.nav li a:hover {background: #f3eeae;
+    border-radius: 0px 20px 20px 0px;}
+    ul.nav > li {display: inline-block; position: relative;}
+    ul.nav > li ul {display: none; position: absolute; left: 0px; background:#fff; border-top-color: #fff; bottom:45px; width: 200px;border-radius: 30px 30px 30px 0px;}
+    ul.nav > li:hover ul {display: block;}
+    ul.nav > li ul li {display: inline-block; width:200px; text-align:left; overflow:hidden;}
+	ul.nav > li a img{margin-right:25px; }
+	img{width:35px;vertical-align:middle;}
+	.clrplt img{width:150px;}
+
+<!-- leftside css start -->
+
+  .wrapper{
+  position:relative;
+  margin:0 auto;
+  padding:50px 0;
+  clear:both;
+  }
+  .menu-area{
+  list-style:none;
+  padding:0;
+  margin:0 20px;
+  width:50px;
+  background:#FFF;
+  border:1px solid #000;
+  border-radius:10px;
+  }
+  .menu-area li{ position:relative;}
+  .menu-area li a{ 
+  text-align:left;
+  position:relative;
+  display:block;
+  text-decoration:none;
+  padding:10px;
+  }
+  .menu-area li ul , 
+  .menu-area li ul li ul{
+
+  visibility:hidden;
+  z-index:999;
+  
+  list-style:none;
+  position:absolute;
+  height:auto;
+  padding:0;
+  margin:0;
+  top:1px;
+  }
+  .menu-area li:hover >ul,
+  .menu-area li ul li:hover >ul{
+  display:block;
+  visibility:visible;
+  }
+  .menu-area li ul li ul{
+  left:0px;
+  top:0
+    }
+.sublist{
+left: 50px;
+
+    background: #fff;
+    border-radius: 0px 10px 10px 10px;
+    border: 1px solid #000;
+    
+}
+.sublist li{
+width:150px;}
+
+.sublist li a img{
+margin-right:10px;
+}
+
+
+.sublist_sub{
+left: 150px !important;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 0px 10px 10px 10px;
+    top: 15px;}
+.menu-area li a:hover{
+background:#f3eeae !important;
+}
+
+.sublist_sub_ani{
+left: 150px !important;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 0px 10px 10px 10px;
+    top: 15px;}
+.menu-area li a:hover{
+background:#f3eeae !important;
+}
+.sublist_sub_ani li img{
+display: inline;
+
+ float:left;
+}
+<!-- left css end -->
+<!-- Header Css Start Here -->
+
+a{
+  color: #000;
+}
+
+.image-clickable {
+  margin-right: auto;
+  float:left;
+  width:25%;
+}
+
+.logo {
+width:250px !important;
+  height: auto;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  color:#000;
+}
+img.hd_icn{
+width:20px !important;
+}
+<!-- Header Css End Here -->
+    ul.nav_lft {border-bottom: 1px solid #999;background:#fff;    border-bottom: 1px solid #999;
+    background: #fff;
+    border-radius: 10px;}
+    ul.nav_lft li a {display: block; text-decoration: none; color: #333; padding: 5px; border:}
+    ul.nav_lft > li:hover {border: 1px solid #666; border-bottom: 1px solid #fff;}
+    ul.nav_lft li a:hover {background: #f3eeae;
+    border-radius: 0px 20px 20px 0px;}
+    ul.nav_lft > li {display: inline-block; position: relative; bottom:100px;}
+    ul.nav_lft > li ul {display: none; position: absolute; left: 0px; background:#fff; border-top-color: #fff; bottom:45px; width: 200px;border-radius: 30px 30px 30px 0px;}
+    ul.nav_lft > li:hover ul {display: block;}
+    ul.nav_lft > li ul li {display: inline-block; width:200px; text-align:left; overflow:hidden;}
+	ul.nav_lft > li a img{margin-right:25px; }
+	img{width:35px;vertical-align:middle;}
+	.clrplt img{width:150px;}
+
+sublist:before {
+  content: "";
+  position:absolute;
+  top:-40px;
+  left:0;
+  height:40px;
+  width: 40px;
+  border-bottom-left-radius: 50%;
+  background:#000;
+}
+
+
+
+		</style>
+	</head>
+
+	<body>
+	    
+		<div id="header">
+      <span class="image-clickable">
+        <a href="#">
+          <img src="images/svg/logo-final.svg" alt="main-logo" class="logo" />
+        </a>
+      </span>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Group Main</a></li>
+          <li><a href="#">Attandance</a></li>
+          <li><a href="#">Profile &nbsp;<img src="images/svg/user-1.svg"/></a></li>
+           <li><a href="#"><img src="images/svg/notifications.svg"/ class="hd_icn"></a></li>
+           <li><a href="#"><img src="images/svg/settings.svg"/ class="hd_icn"></a>
+           <li><a href="#"><img src="images/svg/sign-out-alt.svg"/ class="hd_icn"></a>
+           <li><a href="#"><img src="images/svg/question.svg"/ class="hd_icn"></a>
+        </ul>
+      </nav>
+      </div>
+
+	    <div id="sidebar-left">
+			<div class="wrapper">
+				<nav>
+				   <ul class="menu-area">
+				   <li><a href="#"><img src="images/svg/objects.svg"/></a>
+						<ul class="sublist">
+							
+							<li><a href="#"><img src="images/svg/countdown timer.svg" />Timer</a></li>
+							<li><a href="#"><img src="images/svg/square.svg" />Square</a></li>
+							<li><a href="#"><img src="images/svg/Rectangle.svg" />Rectangle</a></li>
+							<li><a href="#"><img src="images/svg/circle.svg" />Cirle</a></li>
+							<li><a href="#"><img src="images/svg/trinagle.svg" />Triangle</a></li>
+							<li><a href="#"><img src="images/svg/oval.svg" />Oval</a></li>
+							<li><a href="#"><img src="images/svg/line.svg" />Line</a>
+							  <ul class="sublist_sub">
+								  <li><a href="#"><img src="images/svg/dotedline.svg" />Doted Line</a></li>
+								  <li><a href="#"><img src="images/svg/thickline.svg" />Thick Line</a></li>
+								  <li><a href="#"><img src="images/svg/connecting line.svg" />Connecting Line</a> </li>
+								  
+							  </ul>
+							</li>
+							<li><a href="#"><img src="images/svg/lion.svg" />Animals</a>
+							        <ul class="sublist_sub_ani">
+											<li><a href="#"><img src="images/svg/animal.svg" /></a></li>
+											<li><a href="#"><img src="images/svg/animal-2.svg" /></a></li>
+											<li><a href="#"><img src="images/svg/animal-3.svg" /></a></li>
+											<li><a href="#"><img src="images/svg/animal-4.svg" /></a></li>
+											<li><a href="#"><img src="images/svg/animal-6.svg" /></a></li>
+											<li><a href="#"><img src="images/svg/animal-7.svg" /></a></li>
+											<li><a href="#"><img src="images/svg/animal-8.svg" /></a></li>
+											<li><a href="#"><img src="images/svg/animal-9.svg" /></a></li>
+											
+									</ul>
+							</li>
+							
+						</ul>
+				   
+				   </li>
+				   <li><a href="#"><img src="images/svg/subject-books.svg"/></a></a>
+				   <ul class="sublist">
+							
+							<li><a href="#"><img src="images/svg/maths.svg" />Maths</a>
+								<ul class="sublist_sub">
+								  <li><a href="#"><img src="images/svg/protactor.svg" />Protractor</a></li>
+								  <li><a href="#"><img src="images/svg/set square.svg" />Set Square</a></li>
+								  <li><a href="#"><img src="images/svg/rular.svg" />Rular</a> </li>
+								  <li><a href="#"><img src="images/svg/Calculator.svg" />Calculator</a> </li>
+								  <li><a href="#"><img src="images/svg/compass.svg" />Compass</a> </li>
+								  
+							  </ul>
+							</li>
+							<li><a href="#"><img src="images/svg/physics-1.svg" />Physics</a>
+									<ul class="sublist_sub">
+								  <li><a href="#"><img src="images/svg/Flasks.svg" />Flask</a></li>
+								  <li><a href="#"><img src="images/svg/jars.svg" />Jar</a>
+								  <li><a href="#"><img src="images/svg/testtube.svg" />Test Tubes</a> </li>
+								  <li><a href="#"><img src="images/svg/microscope.svg" />Microscope</a> </li>
+								  
+								  
+							  </ul>
+							</li>
+							<li><a href="#"><img src="images/svg/chemistry.svg" />Chemistry</a>
+							<ul class="sublist_sub">
+								  <li><a href="#"><img src="images/svg/Perodic table.svg" />Periodic Table</a></li>
+								  <li><a href="#"><img src="images/svg/atom.svg" />Atom</a>
+								  
+								  
+							  </ul>
+							</li>
+							<li><a href="#"><img src="images/svg/biology.svg" />Biology</a>
+							<ul class="sublist_sub">
+								  <li><a href="#"><img src="images/svg/cells.svg" />Cells</a></li>
+								  <li><a href="#"><img src="images/svg/molecular.svg" />Molecular</a>
+								  <li><a href="#"><img src="images/svg/human body.svg" />Human Body</a> </li>
+								  <li><a href="#"><img src="images/svg/ecology.svg" />Ecology</a> </li>
+								  <li><a href="#"><img src="images/svg/animal.svg" />Animals</a> </li>
+								  <li><a href="#"><img src="images/svg/plants.svg" />Plants</a> </li>
+								  
+								  
+							  </ul>
+							</li>
+							
+						
+						</ul>
+				   
+				   </li>
+				   
+				   
+				   <li><a href="#"><img src="images/svg/select.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/hand.svg"/></a> </li>
+				   <li><a href="#"><img src="images/svg/upload-1.svg"/></a>
+							<ul class="sublist">
+							<li><a href="#"><img src="images/svg/pc.svg" />From PC</a></li>
+							<li><a href="#"><img src="images/svg/drive.svg" />From Drive</a></li>
+							<li><a href="#"><img src="images/svg/onedrive.svg" />From Onedrive</a></li>
+					   </ul>
+				   </li>
+				   <li><a href="#"><img src="images/svg/save.svg"/></a>
+						<ul class="sublist">
+							<li><a href="#"><img src="images/svg/export.svg" />Export</a></li>
+							<li><a href="#"><img src="images/svg/save as.svg" />Save as</a></li>
+							
+					   </ul>
+				   </li>
+				   <li><a href="#"><img src="images/svg/undo.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/undo-1.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/move.svg"/></a></li>
+					  
+				   </ul>
+				</nav>
+		   </div>
+		</div>
+		
+		
+		
+		
+		
+		<div id="main"></div>
+		<div id="sidebar-right">
+			<div class="wrapper">
+				<nav>
+				   <ul class="menu-area">
+				   <li><a href="#"><img src="images/svg/group.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/mike.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/video.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/chat-1.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/screen share.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/record.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/link.svg"/></a></li>
+				   <li><a href="#"><img src="images/svg/more.svg"/></a></li>
+				   </ul>
+				  </nav>
+</div>
+		</div>
+		
+		<div id="footer">
+<ul class="nav_lft">
+        <li>
+            <a href="#"><img src="images/svg/pen-2.svg" /></a>
+            <ul>
+                 <li><a href="#"><img src="images/svg/pen-2.svg" />Simple View Mode</a></li>
+                        <li><a href="#"><img src="images/svg/highlighter.svg" />Present Mode</a></li>
+                        <li><a href="#"><img src="images/svg/magicdraw.svg" />Reset</a></li>
+            </ul>
+        </li>
+		        <li><a href="#"></a><1/1></li>
+				
+	        <li>
+            <a href="#"><img src="images/svg/viewpages.svg" />View Pages</a>
+            <ul>
+                 <li><a href="#"><img src="images/svg/pen-2.svg" />Simple View Mode</a></li>
+                        <li><a href="#"><img src="images/svg/highlighter.svg" />Present Mode</a></li>
+                        <li><a href="#"><img src="images/svg/magicdraw.svg" />Reset</a></li>
+            </ul>
+        </li>
+
+    </ul>
+	
+
+		
+	<ul class="nav">
+        <li>
+            <a href="#"><img src="images/svg/pen-2.svg" /></a>
+            <ul>
+                 <li><a href="#"><img src="images/svg/pen-2.svg" />Marker</a></li>
+                        <li><a href="#"><img src="images/svg/highlighter.svg" />Highlighter</a></li>
+                        <li><a href="#"><img src="images/svg/magicdraw.svg" />Magic Draw</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><img src="images/svg/color.svg" /></a>
+            <ul>
+                <li class="clrplt"><a href="#"><img src="images/svg/colorpallet.svg" /></a></li>
+                
+            </ul>
+        </li>
+        <li>
+            <a href="#"><img src="images/svg/eraser.svg" /></a>
+            <ul>
+                <li><a href="#"><img src="images/svg/deleteall.svg" />Delete</a></li>
+                        <li><a href="#"><img src="images/svg/erase.svg" />Normal</a></li>
+                        <li><a href="#"><img src="images/svg/lasso.svg" />Lasso</a></li>
+            </ul>
+        </li>
+		<li>
+            <a href="#"><img src="images/svg/text.svg" /></a>
+            <ul class="txt_sbl">
+<li><a href="#"><img src="images/svg/notepad.svg" />Sticky Notes</a></li>
+                        <li><a href="#"><img src="images/svg/hand write.svg" />Handwrite</a></li>
+                        <li><a href="#"><img src="images/svg/text.svg" />Click & Type</a></li>
+                        <li><a href="#"><img src="images/svg/text-1.svg" />Basic Text Editor</a></li>
+            </ul>
+        </li>
+		<li>
+            <a href="#"><img src="images/svg/background.svg" /></a>
+            <ul>
+            <li><a href="#"><img src="images/svg/colour.svg" />Colour</a></li>
+                        <li><a href="#"><img src="images/svg/image.svg" />Image</a></li>
+                        <li><a href="#"><img src="images/svg/gridlines.svg" />Grid Lines</a></li>
+            </ul>
+        </li>
+		<li>
+            <a href="#"><img src="images/svg/move.svg" /></a>
+            
+        </li>
+    </ul>
+	
+	</div>
+	
+	</body>
+</html>
